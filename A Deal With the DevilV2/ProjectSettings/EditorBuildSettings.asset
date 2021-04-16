@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dickons#2.unity
     guid: 6bda58f65f76b43d8b7db36d99581615
+  - enabled: 1
+    path: Assets/Scenes/Dickons#3.unity
+    guid: e28ac3b56cea247f28f2c3268cdce911
+  - enabled: 1
+    path: Assets/Scenes/Dickons#4.unity
+    guid: c781d6a02397341bab2825dededc3fd2
+  - enabled: 1
+    path: Assets/Scenes/TitleCard.unity
+    guid: 231fcbc0236444a71bb639c28d05c0de
+  - enabled: 1
+    path: Assets/Scenes/Dickons#5.unity
+    guid: b3313360546ef47efbfb1d76b492869b
+  - enabled: 1
+    path: Assets/Scenes/EndCard.unity
+    guid: cf218c64f4486486a8e6b84a2368b205
   m_configObjects: {}

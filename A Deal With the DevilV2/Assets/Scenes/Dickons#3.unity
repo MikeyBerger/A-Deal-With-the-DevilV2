@@ -1099,7 +1099,7 @@ MonoBehaviour:
   DevilSentences: []
   DickonsIndex: 0
   DevilIndex: 0
-  TypingSpeed: 0
+  TypingSpeed: 0.02
   DVSR: {fileID: 867917793}
   DKSR: {fileID: 550415862}
 --- !u!1 &1752179662
