@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogManagerScript : MonoBehaviour
 {
@@ -10,9 +11,13 @@ public class DialogManagerScript : MonoBehaviour
     public TextMeshProUGUI DevilText;
     public string[] DickonsSentences;
     public string[] DevilSentences;
-    private int DickonsIndex;
-    private int DevilIndex;
+    public int DickonsIndex;
+    public int DevilIndex;
     public float TypingSpeed;
+    public SpriteRenderer DVSR;
+    public SpriteRenderer DKSR;
+    
+    
 
     IEnumerator DickonsSpeaks()
     {
@@ -38,6 +43,8 @@ public class DialogManagerScript : MonoBehaviour
     {
         //StartCoroutine(DevilSpeaks());
         //StartCoroutine(DickonsSpeaks());
+        DVSR.enabled = false;
+        DKSR.enabled = false;
     }
 
     // Update is called once per frame
@@ -45,12 +52,29 @@ public class DialogManagerScript : MonoBehaviour
     {
         DickonsNextSentence();
         DevilNextSentence();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
+            {
+                SceneManager.LoadScene(1);
+            }
+            else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(1))
+            {
+                SceneManager.LoadScene(2);
+            }
+            
+        }
+
     }
 
     public void DickonsNextSentence()
     {
         if (DickonsIndex <= DickonsSentences.Length - 1 && Input.GetKeyDown(KeyCode.Z))
         {
+            DKSR.enabled = true;
+            DVSR.enabled = false;
+            DevilText.text = "";
             DickonsIndex++;
             DickonsText.text = "";
             StartCoroutine(DickonsSpeaks());
@@ -62,6 +86,9 @@ public class DialogManagerScript : MonoBehaviour
     {
         if (DevilIndex < DevilSentences.Length - 1 && Input.GetKeyDown(KeyCode.X))
         {
+            DVSR.enabled = true;
+            DKSR.enabled = false;
+            DickonsText.text = "";
             DevilIndex++;
             DevilText.text = "";
             StartCoroutine(DevilSpeaks());
