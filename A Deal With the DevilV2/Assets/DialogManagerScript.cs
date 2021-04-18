@@ -71,6 +71,10 @@ public class DialogManagerScript : MonoBehaviour
             {
                 SceneManager.LoadScene(4);
             }
+            else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(4))
+            {
+                SceneManager.LoadScene(5);
+            }
             else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(6))
             {
                 SceneManager.LoadScene(7);
