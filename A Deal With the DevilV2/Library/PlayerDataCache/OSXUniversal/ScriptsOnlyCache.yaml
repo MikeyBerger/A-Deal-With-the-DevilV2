@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BoxScript
     - DialogManagerScript
+    - ExitTitle
     - MoveBoy
     - MoveGirl
     - NextScene
@@ -47,6 +48,47 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/Credits.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
+      Script: {instanceID: 12272}
+    - Class: 114
+      Script: {instanceID: 13738}
+    - Class: 114
+      Script: {instanceID: 14350}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Dickons#1.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -72,6 +114,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11552}
     - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
@@ -127,6 +171,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11552}
     - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
@@ -193,6 +239,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11264}
     - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
       Script: {instanceID: 13320}
@@ -258,6 +306,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11264}
     - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
       Script: {instanceID: 13320}
@@ -316,6 +366,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11552}
     - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
@@ -381,6 +433,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13738}
     - Class: 114
       Script: {instanceID: 14350}
+    - Class: 114
+      Script: {instanceID: 63334}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -464,6 +518,59 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/StartCard.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
+      Script: {instanceID: 12272}
+    - Class: 114
+      Script: {instanceID: 13738}
+    - Class: 114
+      Script: {instanceID: 14350}
+    - Class: 114
+      Script: {instanceID: 63334}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/TitleCard.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -483,6 +590,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11264}
+    - Class: 114
+      Script: {instanceID: 11552}
     - Class: 114
       Script: {instanceID: 12272}
     - Class: 114
@@ -1032,6 +1141,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NextScene
+  - hash:
+      serializedVersion: 2
+      Hash: 2dae366094a245e4f43b31912e1eb82f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExitTitle
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
@@ -1042,5 +1157,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TitleCard.unity
   - Assets/Scenes/Dickons#5.unity
   - Assets/Scenes/EndCard.unity
+  - Assets/Scenes/StartCard.unity
+  - Assets/Scenes/Credits.unity
   playerPath: /Users/mikescomputer/Desktop/GitHubs/A-Deal-With-the-DevilV2/A Deal
-    With the DevilV2/Build_2.app
+    With the DevilV2/Final Build.app
